@@ -32,10 +32,43 @@
             </div>
 
             <div class="container">
-                <button type="button" onclick="document.getElementById('id01').style.display='none' " class="cancelbtn">Cancel</button>
+                <button type="button" onclick=closeModal() class="cancelbtn">Cancel</button>
                 <span class="psw">Forgot <a href="#">Password?</a></span>
             </div>
         </form>
     </div>
 </body>
 </html>
+
+
+<script>
+    function closeModal()
+    {
+        var modal = document.getElementById('id01');
+        modal.classList.add('reverse-animation');
+        setTimeout(() => {
+            modal.style.display='none';
+            modal.classList.remove('reverse-animation');
+
+            
+        }, 580);
+    }
+</script>
+
+<!-- <script>
+    function closeModal()
+    {
+        var modal = document.getElementById('id01');
+        modal.classList.add('reverse-animate');
+        setTimeout
+        (
+                function ()
+                {
+                    modal.classList.remove('reverse-animate');
+                    modal.style.display = 'none';
+                   
+                 }, 580
+        ); // Match the duration of the reverse zoom animation
+
+    }
+    </script> -->

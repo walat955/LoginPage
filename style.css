@@ -108,4 +108,17 @@ span.psw {
     from {transform: scale(0)}
     to {transform: scale(1)}
   }
-  
+
+.reverse-animation{
+    animation: reverse-animate 0.6s;
+    -webkit-animation: reverse-animate 0.6s;
+}
+@keyframes reverse-animate {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+    
+}
+@-webkit-keyframes reverse-animate {
+from {-webkit-transform: scale(1);}
+to {-webkit-transform: scale(0);}
+}
